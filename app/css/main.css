@@ -1,0 +1,427 @@
+/*=====================CLEARFIX===========================*/
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body {
+	background: url(image/comppattern2.png);
+}
+
+/*===========================Прибиваем footer====================== */
+
+html, body {
+	height: 100%;
+
+}
+.wrapper {
+	min-height: 100%;
+	margin-bottom: -80px;
+	min-width: 980px;
+}
+
+.wrapper:after {
+	content: "";
+	display: block;
+}
+
+.footer, .wrapper:after {
+	height: 80px
+}
+
+.footer {
+	background: #eff3f7;
+	clear: both;
+	min-width: 980px;
+}
+
+.footer:before {
+	content: "";
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, white, #1c667a, white);
+    display: block;
+}
+
+
+/*===========HEADER==============
+=======*/
+.page_header {
+	background-color: #eff3f7;
+	height: 120px;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.page_header:after {
+	content: "";
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, white, #1c667a, white);
+	display: block;
+    position: absolute;
+    bottom: 0px
+}
+
+.container_big {
+	margin: auto;
+	min-width: 960px;
+	max-width: 1200px;
+}
+
+/*=========
+ ===============Логотип==================
+ ========*/
+.logo_img {
+	margin-top: 39px;
+	float: left;
+}
+/*====================================
+==========Социальные иконки===========
+========================================*/
+.header-logo-text {
+	text-indent: -999999px;
+}
+
+.social {
+	list-style: none;
+	margin-top: 39px;
+	float: right;
+	padding: 0px;
+}
+
+.socials-item {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.vk {
+	background: url(image/spritesheet-vk.png) no-repeat;
+	display: block;
+	width: 47px;
+    height: 47px;
+    background-position: -5px -5px;
+}
+.vk:hover {
+	width: 47px;
+    height: 47px;
+    background-position: -5px -62px;
+}
+.tv {
+	background: url(image/spritesheet-twiter.png) no-repeat;
+	display: block;
+	width: 47px;
+    height: 47px;
+    background-position: -5px -5px;
+}
+.tv:hover {
+	width: 47px;
+    height: 47px;
+    background-position: -5px -62px;
+}
+.f {
+	background: url(image/spritesheet-f.png) no-repeat;
+	display: block;
+	width: 47px;
+	height: 47px;
+	background-position: -5px -5px;
+}
+.f:hover {
+	width: 47px;
+    height: 47px;
+    background-position: -5px -62px;
+}
+.git {
+	background: url(image/spritesheet-git.png) no-repeat;
+	display: block;
+	width: 47px;
+	height: 47px;
+	background-position: -5px -5px;
+}
+.git:hover {
+	width: 47px;
+    height: 47px;
+    background-position: -5px -62px;
+}
+
+
+/*  CONTENT
+  ==========*/
+.container {
+	margin: auto;
+	width: 960px;
+}
+/*Левая колонка*/
+.side_bar {
+	float: left;
+	width: 250px;
+}
+
+.navigation {
+	overflow: hidden;
+	list-style: none;
+	background-color: #EFF3F7;
+	border-radius: 4px;
+	margin-bottom: 26px;
+}
+
+.navigation_list {
+	padding:0;
+	margin: 0;
+}
+
+.navigation .navigation_item {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navigation .navigation_item:first-child {
+	border-top: none;
+}
+
+.navigation .navigation_link {
+	display: block;
+	font-size: 20px;
+	text-decoration: none;
+	margin-left: 16px;
+	padding: 26px 0px;
+	color: #a9aeb9;
+	font-family: firasansbok;
+}
+
+.navigation .navigation_link:hover {
+	color: #3ba8c0;
+	transition: .5s;
+}
+
+.navigation .navigation_item {
+	border-top: 2px solid #3ba8c0;
+	margin: 0 11px;
+}
+
+.contacts-header {
+	background: #3ba8c0;
+}
+
+.header-inner-text {
+	margin-left: 20px;
+	color: #fff;
+	line-height: 40px;
+	font-size: 21px;
+	font-family: 'firasansbok';
+}
+
+.contakt-list {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.contacts-item {
+	text-align: left;
+}
+
+.contakt-link {
+	text-decoration: none;
+}
+
+.contakt-link:hover {
+	border-bottom: 1px solid #fff;
+}
+
+.contacts-text {
+	color: #fff;
+	line-height: 40px;
+	font-size: 15px;
+	font-family: 'firasansbok';
+
+}
+
+.contacts-item-mail {
+	background: url(image/почта.png) no-repeat;
+	background-position:30px;
+	background-color: #41b9d4;
+	text-indent: 70px;
+}
+
+.contacts-item-phon {
+	background: url(image/тел.png) no-repeat;
+	background-position: 30px;
+	background-color: #48cbe8;
+	text-indent: 70px;
+}
+
+.contacts-item-skype {
+	background: url(image/skype.png) no-repeat;
+	background-position: 30px;
+	background-color: #51daf8;
+	text-indent: 70px;
+}
+
+
+/*===========
+Правая часть
+============*/
+.variable_content {
+	float: right;
+	width: 650px;
+}
+
+.information {
+	background: #eff3f7;
+	border-radius: 5px;
+	margin-bottom: 35px;
+	width: 650px;
+}
+
+.table_of_contents {
+	line-height: 70px;
+	border-bottom: 2px solid #3ba8c0;
+	width: 326px;
+	text-indent: 21px;
+	margin: 0px;
+	color: #3ba8c0;
+	font-family: 'firasansbok';
+	font-size: 27px;
+}
+/*=========AVATAR=========*/
+.photo_my {
+ 	float: left;
+ 	margin-left: 55px;
+ 	margin-top: 35px;;
+}
+
+.avatar_box {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	border: 4px solid #3ba8c0;
+	overflow: hidden;
+}
+
+.avatar {
+	width: 100%;
+}
+
+.workchet-list {
+	width: 400px;
+	float: right;
+	list-style: none;
+	padding: 0px;
+	margin-top: 23px;
+}
+
+.workchet-list .workchet-list-item {
+	padding-bottom: 23px;
+}
+
+.workcheet-what {
+	display: inline-block;
+	color: #4a545d;
+	font-size: 17px;
+	font-family: 'firasansmedium';
+}
+
+.workcheet-info {
+	color: #767d84;
+	font-weight: bold;
+	max-width: 218px;
+	display: inline;
+	margin-left: 8px;
+}
+
+.skills-list {
+	float: right;
+	padding: 0px;
+	width: 229px;
+}
+
+.slill-item {
+	list-style: none;
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #3ba8c0 50%, #2e8ca2 -100%);
+    color: #fff;
+    font-size: 14px;
+    height: 20px;
+    text-align: center;
+    border-radius: 3px;
+    line-height: 20px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-bottom: 9px;
+    font-family: proxima_nova_condensedSBd;
+}
+
+/*Второй блок*/
+
+.aboutbox-list {
+	list-style: none;
+}
+
+.aboutbox-item {
+	padding-bottom: 27px;
+	text-indent: 64px;
+}
+
+.icon-work {
+	background: url(image/раб.png) no-repeat;
+	margin-left:10px;
+}
+.where {
+	font-size: 17px;
+	color: #5a636b;
+	font-family: 'firasansbok';
+}
+
+.period {
+	font-size: 15px;
+	color: #828990;
+	font-family: 'firasanslight';
+	font-weight: bold;
+}
+
+/*Третий блок*/
+.icon-college {
+	background: url(image/уч.png) no-repeat;
+}
+
+.icon-course {
+	background: url(image/курс.png) no-repeat;
+	margin-left: 10px;
+	text-indent: 54px;
+}
+
+/*footer*/
+
+.lock {
+	background: url(image/spritesheet-lock.png) no-repeat;
+	width: 20px;
+    height: 32px;
+    background-position: -5px -5px;
+  	float: left;
+  	margin-top: 30px;
+}
+
+.lock:hover {
+	width: 20px;
+    height: 32px;
+    background-position: -5px -47px;
+}
+
+.text-footer {
+	text-align: center;
+	font-size: 13px;
+	font-family: 'firasansmedium';
+	color: #5a636b;
+	line-height: 80px;
+	margin: 0px;
+}
+
+
+
+

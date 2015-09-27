@@ -1,0 +1,30 @@
+
+/*=======fira bold========*/
+@font-face {
+	font-family: fira;
+	src: url(fira/firamono-regular.ttf);
+	src: url(fira/firamono-bold.eot);
+	src: url(fira/firamono-bold.woff);
+}
+/*=======fira regular=========*/
+@font-face {
+	font-family: firaRegular;
+	src: url(fira/firamono-regular.eot);
+	src: url(fira/firamono-regular.ttf);
+	src: url(fira/firamono-regular.woff);
+}
+
+/*======proximanova=======*/
+@font-face {
+	font-family: firaRegular;
+	src: url(fira/firamono-regular.eot);
+	src: url(fira/firamono-regular.ttf);
+	src: url(fira/firamono-regular.woff);
+}
+
+
+
+body {
+	font-family: firaRegular;
+	font-weight: normal;
+}
