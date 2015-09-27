@@ -282,7 +282,7 @@ html, body {
 .table_of_contents {
 	line-height: 70px;
 	border-bottom: 2px solid #3ba8c0;
-	width: 326px;
+	width: 350px;
 	text-indent: 21px;
 	margin: 0px;
 	color: #3ba8c0;
@@ -345,6 +345,8 @@ html, body {
 	list-style: none;
     display: inline-block;
     background: -webkit-linear-gradient(top, #3ba8c0 50%, #2e8ca2 -100%);
+	background: -o-linear-gradient(top, #3ba8c0 50%, #2e8ca2 -100%);
+    background: -moz-linear-gradient(top, #3ba8c0 50%, #2e8ca2 -100%);             
     color: #fff;
     font-size: 14px;
     height: 20px;
