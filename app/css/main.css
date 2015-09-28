@@ -1,4 +1,19 @@
+/*======AKTIV======*/
+
+.navigation .navigation_item.activ {
+	background: #3ba8c0;
+    margin: 0;
+    border-bottom: none;
+    padding-left: 11px;
+    margin-bottom: -2px;
+}
+
+.navigation .navigation_item.activ .navigation_link {
+    color: #f9fafb;   
+}
+
 /*=====================CLEARFIX===========================*/
+
 .clearfix:before, .clearfix:after {
 	content: "";
 	display: table;
@@ -170,8 +185,8 @@ html, body {
 }
 
 .navigation_list {
-	padding:0;
 	margin: 0;
+	padding: 0;
 }
 
 .navigation .navigation_item {
@@ -185,13 +200,12 @@ html, body {
 }
 
 .navigation .navigation_link {
-	display: block;
 	font-size: 20px;
 	text-decoration: none;
-	margin-left: 16px;
-	padding: 26px 0px;
+	padding: 26px 26px;
 	color: #a9aeb9;
 	font-family: firasansbok;
+	display: block;
 }
 
 .navigation .navigation_link:hover {
@@ -201,7 +215,7 @@ html, body {
 
 .navigation .navigation_item {
 	border-top: 2px solid #3ba8c0;
-	margin: 0 11px;
+	margin: 0px 11px;
 }
 
 .contacts-header {
@@ -224,6 +238,7 @@ html, body {
 
 .contacts-item {
 	text-align: left;
+
 }
 
 .contakt-link {
