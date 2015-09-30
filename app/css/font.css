@@ -1,43 +1,41 @@
 /*=======firasansbook=========*/
 @font-face {
 	font-family: 'firasansbok';
-	src: url(fira/firasans-book.eot);
-	src: url(fira/firasans-bold.ttf);
-	src: url(fira/firasans-book.woff);
+	src: url(font/fira/firasans-book.eot);
+	src: url(font/fira/firasans-book.ttf);
+	src: url(font/fira/firasans-book.woff);
 	 font-weight: normal;
-    font-style: normal;
-
+   	 font-style: normal;
 }
 /*===========firasansmedium======*/
 @font-face {
 	font-family: 'firasansmedium';
-	src: url(fira/firasans-medium.eot);
-	src: url(fira/firasans-medium.ttf);
-	src: url(fira/firasans-medium.woff);
+	src: url(font/fira/firasans-medium.eot);
+	src: url(font/fira/firasans-medium.ttf);
+	src: url(font/fira/firasans-medium.woff);
 	  font-weight: normal;
-    font-style: normal;
+      font-style: normal;
 }
 /*===================FIRASANSLIGHT=================*/
 @font-face {
 	font-family: 'firasanslight';
-	src: url(fira/firasans-light.eot);
-	src: url(fira/firasans-light.ttf) format('truetype');
-	src: url(fira/firasans-light.woff)  format('woff');
+	src: url(font/fira/firasans-light.eot);
+	src: url(font/fira/firasans-light.ttf) format('truetype');
+	src: url(font/fira/firasans-light.woff)  format('woff');
 	  font-weight: normal;
-    font-style: normal;
+      font-style: normal;
 }
 
 /*======proximanova=======*/
 @font-face {
     font-family: 'proxima_nova_condensedSBd';
-    src: url('proximanovacond-semibold-webfont.eot');
-    src: url('proximanovacond-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('proximanovacond-semibold-webfont.woff2') format('woff2'),
-         url('proximanovacond-semibold-webfont.woff') format('woff'),
-         url('proximanovacond-semibold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+    src: url('font/proximanova/proximanovacond-semibold-webfont.eot');
+    src: url('font/proximanova/proximanovacond-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/proximanova/proximanovacond-semibold-webfont.woff2') format('woff2'),
+         url('font/proximanova/proximanovacond-semibold-webfont.woff') format('woff'),
+         url('font/proximanova/proximanovacond-semibold-webfont.ttf') format('truetype');
+			    font-weight: normal;
+			    font-style: normal;
 }
 
 

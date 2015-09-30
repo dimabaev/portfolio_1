@@ -29,10 +29,11 @@ body {
 
 /*===========================Прибиваем footer====================== */
 
-html, body {
+html, body, .wrapper {
 	height: 100%;
 
 }
+
 .wrapper {
 	min-height: 100%;
 	margin-bottom: -80px;
@@ -44,14 +45,12 @@ html, body {
 	display: block;
 }
 
-.footer, .wrapper:after {
-	height: 80px
-}
-
 .footer {
+	position: relative;
+	margin-top: -83px;
+	min-width: 980px;
 	background: #eff3f7;
 	clear: both;
-	min-width: 980px;
 }
 
 .footer:before {
@@ -200,12 +199,13 @@ html, body {
 }
 
 .navigation .navigation_link {
-	font-size: 20px;
+	font-size: 21px;
 	text-decoration: none;
-	padding: 26px 26px;
 	color: #a9aeb9;
 	font-family: firasansbok;
 	display: block;
+	padding: 26px 22px;
+	/*font-weight: bold;*/
 }
 
 .navigation .navigation_link:hover {
@@ -228,6 +228,12 @@ html, body {
 	line-height: 40px;
 	font-size: 21px;
 	font-family: 'firasansbok';
+	font-style: normal;;
+}
+
+.contacts{
+	border-radius: 5px;
+	overflow: hidden;
 }
 
 .contakt-list {
@@ -237,12 +243,11 @@ html, body {
 }
 
 .contacts-item {
-	text-align: left;
-
+	padding-left: 70px;
 }
 
 .contakt-link {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .contakt-link:hover {
@@ -251,9 +256,10 @@ html, body {
 
 .contacts-text {
 	color: #fff;
-	line-height: 40px;
-	font-size: 15px;
 	font-family: 'firasansbok';
+	font-size: 15px;
+	line-height: 40px;
+	font-style: normal;
 
 }
 
@@ -261,21 +267,18 @@ html, body {
 	background: url(image/почта.png) no-repeat;
 	background-position:30px;
 	background-color: #41b9d4;
-	text-indent: 70px;
 }
 
 .contacts-item-phon {
 	background: url(image/тел.png) no-repeat;
 	background-position: 30px;
 	background-color: #48cbe8;
-	text-indent: 70px;
 }
 
 .contacts-item-skype {
 	background: url(image/skype.png) no-repeat;
 	background-position: 30px;
 	background-color: #51daf8;
-	text-indent: 70px;
 }
 
 
@@ -328,7 +331,6 @@ html, body {
 	float: right;
 	list-style: none;
 	padding: 0px;
-	margin-top: 23px;
 }
 
 .workchet-list .workchet-list-item {
@@ -382,7 +384,7 @@ html, body {
 
 .aboutbox-item {
 	padding-bottom: 27px;
-	text-indent: 64px;
+
 }
 
 .icon-work {
@@ -393,6 +395,7 @@ html, body {
 	font-size: 17px;
 	color: #5a636b;
 	font-family: 'firasansbok';
+	margin-left: 65px;
 }
 
 .period {
@@ -400,17 +403,32 @@ html, body {
 	color: #828990;
 	font-family: 'firasanslight';
 	font-weight: bold;
+	margin-left: 65px;
 }
 
 /*Третий блок*/
+.where_kurs {
+	font-size: 17px;
+	color: #5a636b;
+	font-family: 'firasansbok';
+	margin-left: 54px;
+}
+
+.period_kurs {
+	font-size: 15px;
+	color: #828990;
+	font-family: 'firasanslight';
+	font-weight: bold;
+	margin-left: 54px;
+}
+
 .icon-college {
 	background: url(image/уч.png) no-repeat;
 }
 
 .icon-course {
 	background: url(image/курс.png) no-repeat;
-	margin-left: 10px;
-	text-indent: 54px;
+	margin-left: 9px;
 }
 
 /*footer*/
@@ -418,7 +436,7 @@ html, body {
 .lock {
 	background: url(image/spritesheet-lock.png) no-repeat;
 	width: 20px;
-    height: 32px;
+    height: 35px;
     background-position: -5px -5px;
   	float: left;
   	margin-top: 30px;
@@ -426,7 +444,7 @@ html, body {
 
 .lock:hover {
 	width: 20px;
-    height: 32px;
+    height: 35px;
     background-position: -5px -47px;
 }
 
