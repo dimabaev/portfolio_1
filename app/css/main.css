@@ -353,6 +353,7 @@ html, body, .wrapper {
 	max-width: 218px;
 	display: inline;
 	margin-left: 8px;
+	font-size: 15px;
 }
 
 .skills-list {
