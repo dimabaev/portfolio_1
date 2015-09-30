@@ -102,15 +102,16 @@ html, body, .wrapper {
 }
 
 .social {
-	list-style: none;
-	margin-top: 39px;
 	float: right;
 	padding: 0px;
+	list-style: none;
+	margin-top: 36px;
+	margin-right: 2px;
 }
 
 .socials-item {
 	display: inline-block;
-	margin-left: 10px;
+	margin-left: 19px;
 }
 
 .vk {
@@ -204,7 +205,7 @@ html, body, .wrapper {
 	color: #a9aeb9;
 	font-family: firasansbok;
 	display: block;
-	padding: 26px 22px;;
+	padding: 21px 18px;
 }
 
 .navigation .navigation_link:hover {
@@ -292,7 +293,7 @@ html, body, .wrapper {
 .information {
 	background: #eff3f7;
 	border-radius: 5px;
-	margin-bottom: 35px;
+	margin-bottom: 25px;
 	width: 650px;
 }
 
@@ -307,6 +308,7 @@ html, body, .wrapper {
 	font-size: 27px;
     font-weight: normal;
    	font-style: normal;
+   	margin-bottom: 1px;
 }
 /*=========AVATAR=========*/
 .photo_my {
@@ -335,7 +337,7 @@ html, body, .wrapper {
 }
 
 .workchet-list .workchet-list-item {
-	padding-bottom: 23px;
+	padding-bottom: 6px;
 }
 
 .workcheet-what {
@@ -381,10 +383,12 @@ html, body, .wrapper {
 
 .aboutbox-list {
 	list-style: none;
+	padding-left: 49px;
 }
 
 .aboutbox-item {
-	padding-bottom: 27px;
+	padding-left: 7px;
+	padding-bottom: 17px;
 
 }
 
