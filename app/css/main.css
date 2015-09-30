@@ -204,8 +204,7 @@ html, body, .wrapper {
 	color: #a9aeb9;
 	font-family: firasansbok;
 	display: block;
-	padding: 26px 22px;
-	/*font-weight: bold;*/
+	padding: 26px 22px;;
 }
 
 .navigation .navigation_link:hover {
@@ -228,7 +227,7 @@ html, body, .wrapper {
 	line-height: 40px;
 	font-size: 21px;
 	font-family: 'firasansbok';
-	font-style: normal;;
+	font-style: normal;
 }
 
 .contacts{
@@ -306,6 +305,8 @@ html, body, .wrapper {
 	color: #3ba8c0;
 	font-family: 'firasansbok';
 	font-size: 27px;
+    font-weight: normal;
+   	font-style: normal;
 }
 /*=========AVATAR=========*/
 .photo_my {
@@ -451,10 +452,12 @@ html, body, .wrapper {
 .text-footer {
 	text-align: center;
 	font-size: 13px;
-	font-family: 'firasansmedium';
+	font-family: 'firasanslight';
 	color: #5a636b;
 	line-height: 80px;
 	margin: 0px;
+	font-weight: bold;
+    font-style: normal;
 }
 
 
