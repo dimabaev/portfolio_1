@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="css/font.css">
 	<link href="css/main.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main-work.css">
+	<link rel="stylesheet" type="text/css" href="css/link.css">
 	<!-- favicon -->
 	<link rel="icon"  href="css/image/favicon.ico">
 	<!-- js -->
@@ -54,10 +55,10 @@
 							<li class="navigation_item">
 								<a class="navigation_link" href="index.html">Обо мне</a>
 							</li>
-							<li class="navigation_item active">
+							<li class="navigation_item">
 								<a class="navigation_link" href="main-work.html">Мои работы</a>
 							</li>
-							<li class="navigation_item">
+							<li class="navigation_item active">
 								<a class="navigation_link" href="link.html">Связаться со мной</a>
 							</li>
 
@@ -92,89 +93,45 @@
 				<!-- =============== -->
 				<div class="variable_content">
 					<section class="information">
-						<h2 class="table_of_contents">Мои работы</h2>
-						<div class="autobox-body">
-							<ul class="portfolio_list">
+						<div class="link_backgraund">
+							<h2 class="table_of_contents_link">У вас интересный проект? Напишите мне</h2>
+						</div>
+						<div class="form clearfix">
+							<form name="form" method="post" action="">
+								<label for="" class=" label you_name clearfix">
+									<p class="name">Имя</p>
+									<input class="input" type="text" name="name" id="name" placeholder="Как к Вам обращаться?"></label>
 
-								<li class="portfolio_item">
-									<div class="portfolio_box">
-										<div class="content">
-											<h2 class="text-decor">www.site.com</h2>
-										</div>
-										<div class="wrapper_1">
-											<a href="#"><img class="img" src="css/image/site_1.png"></a></div>
-									</div>
-									<span class="adress">
-										<a href="#" class="adress-link">www.site.com</a>
-									</span>
-									<span class="inf_work">Информация о проекте 2 превью 2 строки....</span>
-								</li>
+								<label for="" class="label you_mail clearfix">
+									<p class="name">Email</p>
+									<input class="input" type="text" name="name" id="name" placeholder="Как к Вам обращаться?"></label>
 
-								<li class="portfolio_item">
-									<div class="portfolio_box">
-										<div class="content">
-											<h2 class="text-decor">www.site.com</h2>
-										</div>
-										<div class="wrapper_1">
-											<a href="#"><img class="img" src="css/image/site_2.png"></a></div>
-									</div>
-									<span class="adress">
-										<a href="#" class="adress-link">www.site.com</a>
-									</span>
-									<span class="inf_work">Информация о проекте 2 превью 2 строки....</span>
-								</li>
+								<label for="" class="label your_message clearfix">
+									<p class="message">Кратко о себе</p>
+									<textarea class="textarea" name="message" id="message" placeholder="Кратко в чем суть?"></textarea>
+								</label>
 
-								<li class="portfolio_item">
-									<div class="portfolio_box">
-										<div class="content">
-											<h2 class="text-decor">www.site.com</h2>
-										</div>
-										<div class="wrapper_1">
-											<a href="#"><img class="img" src="css/image/site_3.png"></a></div>
-									</div>
-									<span class="adress">
-										<a href="#" class="adress-link">www.site.com</a>
-									</span>
-									<span class="inf_work">Информация о проекте 2 превью 2 строки....</span>
-								</li>
+								<label for="" class="label capha clearfix">
+									<p class="caption">Введите код, указанный на картинке</p>
+								</label>
+								<img class="captcha-img" src="css/image/capha.png" alt="каптча">
 
-							<li class="portfolio_item">
-									<div class="portfolio_box">
-										<h2 class="text-decor">www.site.com</h2>
-										<div class="wrapper_1">	
-											<a href="#"><img class="img" src="css/image/site_4.png"></a>						
-										</div>
+								<label class="captha_code clearfix">
+									<input class="captcha-input" value="" type="text" name="name" id="name" placeholder="Введите код">
+								</label>
 
-									</div>
-									<span class="adress">
-										<a href="#" class="adress-link">www.site.com</a>
-									</span>
-									<span class="inf_work">Информация о проекте 2 превью 2 строки....</span>
-								</li>
+								<div class="clearfix">
+									<input class="submit_one" type="submit" name="submit" id="submit" value="">
+									<input class="submit_2" type="submit" name="submit" id="submit" value=""></div>
 
-								<li class="portfolio_item">
-									<div class="portfolio_box_load">
-										<div class="wrapper_2">
-											<a class="load-link" href="#"> <img class="img-load" src="css/image/добавить-изобр.png" height="32" width="32"></a>
-
-												<p class="load-p">Загрузить проект</p>
-											</div>
-
-									</div>
-									<span class="adress">
-										<a href="#" class="adress-link"></a>
-									</span>
-									<span class="inf_work"></span>
-								</li>
-
-							</ul>
+							</form>
 						</div>
 					</section>
 				</div>
+
 			</div>
 		</div>
 	</div>
-
 	<footer class="footer">
 		<div class="container">
 			<div class="lock">

@@ -1,14 +1,14 @@
 /*======AKTIV======*/
 
-.navigation .navigation_item.activ {
-	background: #3ba8c0;
+.navigation .navigation_item.active {
     margin: 0;
     border-bottom: none;
     padding-left: 11px;
     margin-bottom: -2px;
+    background: #3ba8c0;
 }
 
-.navigation .navigation_item.activ .navigation_link {
+.navigation .navigation_item.active .navigation_link {
     color: #f9fafb;   
 }
 
@@ -196,7 +196,7 @@ html, body, .wrapper {
 }
 
 .navigation .navigation_item:first-child {
-	border-top: none;
+    border-top: none;
 }
 
 .navigation .navigation_link {

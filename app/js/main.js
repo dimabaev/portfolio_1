@@ -1,15 +1,18 @@
 $(function () {
 	$('.wrapper_1').hover(function() {
-		$(this).children().stop().animate({opacity:0}, 600);
+		$(this).children().stop().animate({
+			paddingTop:"0%",
+			opacity:0.3
+		}, 400);
 	},function() {
-		$(this).children().stop().animate({opacity:1}, 600);
+		$(this).children().stop().animate({
+			paddingTop:"100%",
+			opacity:1
+		}, 400);
 	});
-})
+});
 
-// $(function() {
-// 	$('.text-decor').hover(function() {
-// 		$(this).children().stop().animate({transform:'100%'}, 700);
-// 	},function () {
-// 		$(this).children().stop().animate({transform:'0%'}, 700);
-// 	});
-// })
+ // $( '.navigation_item' ).click(function() {
+ // 	$(this).slideUp();
+ // });
+
