@@ -1,0 +1,17 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-_____ {
+    width: 226px;
+    height: 54px;
+    background-position: -5px -5px;
+}
+
+.sprite-hover {
+    width: 226px;
+    height: 51px;
+    background-position: -5px -69px;
+}

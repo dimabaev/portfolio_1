@@ -1,0 +1,118 @@
+
+.wrapper_2 {
+	
+}
+
+.admin_panel {
+	width: 590px;
+	background: #eff3f7;
+    transform: translateY(50%);
+    margin: auto;
+    height: 500px;
+}
+
+.header_admin {
+	 background-color:#48cbe8;
+     border-bottom: 15px solid #67dffa;
+     height: 92px;
+     border-radius: 5px 5px 0px 0px;
+     margin-bottom: 29px;
+}
+
+.admin_auto {
+	line-height: 92px;
+	text-align: center;
+	margin: 0px;
+	color:#F9FAFB;
+	font-family: 'firasansbok';
+	font-size: 40px;
+    font-weight: normal;
+   	font-style: normal;
+}
+
+.body_admin {
+	margin: auto 84px ;
+	/*text-align: center;*/
+}
+
+.label_login {
+    padding: 0;
+	margin: 0;
+}
+
+.name_login {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 3px;
+	font-size: 36px;
+	font-family:'firasanslight';
+	color: #959aa8;
+	text-align: center;
+}
+
+.input_login {
+	width: 418px;
+	height: 62px;
+	border: 1px solid #48cbe8;
+	border-radius: 3px 3px;
+	padding-left: 19px;
+	color: #48cbe8;
+}
+
+.input_login::-webkit-input-placeholder {
+	color: #48cbe8;
+	font-size: 17px;
+}
+
+.label_password {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+.password_login{
+    padding: 0;
+	margin: 0;
+	margin-bottom: 3px;
+	font-size: 36px;
+	font-family:'firasanslight';
+	color: #959aa8;
+	text-align: center;
+}
+
+.input_password {
+	width: 423px;
+	height: 62px;
+	padding-left: 19px;
+	border: 1px solid #48cbe8;
+	border-radius: 3px 3px;
+	overflow: hidden;
+	color: #48cbe8;
+	margin-bottom: 35px;
+}
+
+.input_password::-webkit-input-placeholder {
+	color: #48cbe8;
+	font-size: 17px;
+}
+
+.wrapper_button {
+	margin-left: 100px;
+}
+
+.button_admin {
+	background: url(image/spritesheet_admin.png) no-repeat;
+	width: 226px;
+    height: 54px;
+    background-position: -5px -5px;
+    border: none;
+}
+
+.button_admin:active {
+	width: 226px;
+    height: 51px;
+    background-position: -5px -69px;
+}
+
+input[type="submit"]:focus { outline: none; }
+
