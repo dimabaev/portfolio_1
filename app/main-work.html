@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="css/font.css">
 	<link href="css/main.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main-work.css">
+	<link rel="stylesheet" type="text/css" href="css/popUp.css">
 	<!-- favicon -->
 	<link rel="icon"  href="css/image/favicon.ico">
 	<!-- js -->
@@ -22,6 +23,40 @@
 </head>
 <body>
 
+<!-- POPUP -->
+	<div class="popup" id="popup1">
+		<div class="popup_container">
+			<div class="popup_header">
+				<h3 class="popup_text">Добавление проекта <a class="close_popup" href="javascript:PopUpHide()">X</a></h3>
+			</div>
+			<form action="" class="popup_form" method="post" action="">
+
+				<label class="label_name_project">
+				        <p class="name_project_text">Название проекта</p>
+						<input type="text" class="name_project" placeholder="Введите название" name="" id="">
+			   	</label>
+
+			   	<label class="label_name_project">
+				        <p class="name_project_text">Картинка проекта</p>
+							<div class="fila_decor">
+							<input type="file" class="name_load" placeholder="Введите название" name="" id="">
+							</div>
+			   	</label>
+
+			   	<label class="label_name_project">
+				        <p class="name_project_text">URL проекта</p>
+						<input type="text" class="name_project" placeholder="Добавьте ссылку" name="" id="">
+			   	</label>
+
+			   	<label class="label_name_project">
+				        <p class="name_project_text">Описание</p>
+						<textarea class="name_textarea" name="" id="" placeholder="Кратко в чем суть"></textarea>
+			   	</label>
+
+			</form>
+		</div>
+	</div>
+<!-- КОНЕЦ POPUP -->
 	<div class="wrapper">
 		<div class="main_content">
 			<header class="page_header">
@@ -158,13 +193,9 @@
 											<a class="load-link" href="javascript:PopUpShow()"> <img class="img-load" src="css/image/добавить-изобр.png" height="32" width="32">
 												<p class="load-p">Загрузить проект</p></a>
 											</div>
-ь
-   											<!-- -всплывающие окно- начало  -->
-											<div class="b-popup" id="popup1">
-    								       <div class="b-popup-content">
-   							               <a href="javascript:PopUpHide()"></a>
-    							          </div>
-									         </div>
+
+   									
+										
 
 									</div>
 									<span class="adress">

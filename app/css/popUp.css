@@ -1,0 +1,129 @@
+ .popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.popup_container {
+	width: 364px;
+    min-height: 70px;
+    top: 50%;
+    left: 50%;
+    margin-left: -183px;
+    margin-top: -250px;
+    position: absolute;
+    background: #eff3f7;
+    border-radius: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.popup_header{
+	background: #48cbe8;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 9px solid #67dffa;
+	margin-bottom: 9px;
+}
+
+.popup_text {
+	/*background: url(image/close.png) no-repeat;
+	background-position: 330px 12px;*/
+	margin: 0;
+	color: #fff;
+	padding: 14px 0px 14px 11px;
+}
+
+.close_popup {
+	padding:0;
+	margin:0;
+	float: right;
+	margin-right: 10px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.popup_form {
+	margin: auto 21px;
+    width: 320px;
+}
+
+.label_name_project {
+	
+}
+
+.name_project {
+	width: 310px;
+	height: 38px;
+	border: 1px solid #48cbe8;
+	border-radius: 5px;
+	padding-left: 10px;
+	margin-bottom: 9px;
+	color: #48cbe8;
+
+}
+
+.name_load {
+	width: 310px;
+	height: 38px;
+	border: 1px solid #48cbe8;
+	border-radius: 5px;
+	padding-left: 10px;
+	margin-bottom: 9px;
+	color: #48cbe8;
+}
+
+.name_project_text {
+	margin: 0;
+	color: #c2c7cf;
+	font-size: 17px;
+	margin-bottom: 6px;
+}
+
+.name_textarea {
+	resize: none;
+	border: 1px solid #48cbe8;
+	width: 310px;
+	height: 110px;
+	border-radius: 5px;
+	padding-left: 10px;
+	margin-bottom: 9px;
+	color: #48cbe8;
+}
+
+
+.name_project::-webkit-input-placeholder {
+  color: #48cbe8;
+}
+.name_textarea::-webkit-input-placeholder {
+  color: #48cbe8;
+}
+
+.fila_decor {
+	position: relative;
+	width: 310px;
+/*	background: #eee;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  text-align: center;*/
+	/*height: 38px;*/
+	/*overflow: hidden;*/
+}
+
+.fila_decor input[fype=file] {
+	position: absolute;
+	 top: 0; 
+	 right: 0;
+	 opacity: 0;
+     filter: alpha(opacity=0);
+}
+
+
+input[type="text"]:focus { outline: none; }
+input[type="file"]:focus { outline: none; }
+textarea:focus { outline: none; }
+
