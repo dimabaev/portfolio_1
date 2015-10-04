@@ -5,7 +5,7 @@
     right: 0;
     left: 0;
     z-index: 10;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(129, 142, 155, 0.6);
 }
 
 .popup_container {
@@ -31,14 +31,15 @@
 }
 
 .popup_text {
-	/*background: url(image/close.png) no-repeat;
-	background-position: 330px 12px;*/
 	margin: 0;
 	color: #fff;
 	padding: 14px 0px 14px 11px;
 }
 
 .close_popup {
+	background: url(image/close.png) no-repeat;
+	width: 26px;
+	height: 26px;
 	padding:0;
 	margin:0;
 	float: right;
@@ -64,11 +65,29 @@
 	padding-left: 10px;
 	margin-bottom: 9px;
 	color: #48cbe8;
+}
 
+/*Редактирование загрузки файлов*/
+.fila_decor {
+	position: relative;
+	width: 320px;
+	height: 38px;
+	border: 1px solid #48cbe8;
+	border-radius: 5px;
+	margin-bottom: 9px;
+	color: #48cbe8;
+	cursor: pointer;
+	background: #fff;
+	overflow: hidden;
+}
+.fila_decor .name_load {
+	position: absolute;
+	top: 0;
+	opacity: 0;
 }
 
 .name_load {
-	width: 310px;
+	width: 320px;
 	height: 38px;
 	border: 1px solid #48cbe8;
 	border-radius: 5px;
@@ -76,6 +95,28 @@
 	margin-bottom: 9px;
 	color: #48cbe8;
 }
+
+.decor_p {
+	float: left;
+	margin: 0;
+	color: #48cbe8;
+	font-size: 17px;
+	margin-bottom: 6px;
+	padding-left: 10px;
+	padding-top: 10px;
+	cursor: pointer;
+}
+
+.load_scrin {
+	float: right;
+	background: url(image/load.png) no-repeat;
+	background-position: 10px 6px;
+	width: 52px;
+	height: 40px;
+	background-color: #48cbe8;
+	cursor: pointer;
+}
+/*-------конец редактирования---------*/
 
 .name_project_text {
 	margin: 0;
@@ -88,12 +129,30 @@
 	resize: none;
 	border: 1px solid #48cbe8;
 	width: 310px;
-	height: 110px;
+	height: 100px;
 	border-radius: 5px;
 	padding-left: 10px;
+	padding-top: 10px;
 	margin-bottom: 9px;
 	color: #48cbe8;
 }
+
+.bottom_project {
+	background: url(image/spritesheet_project.png) no-repeat;
+	width: 140px;
+    height: 33px;
+    background-position: -5px -48px;
+    margin: 10px auto;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.bottom_project:active {
+	 width: 140px;
+    height: 33px;
+    background-position: -5px -5px;
+}
+
 
 
 .name_project::-webkit-input-placeholder {
@@ -125,5 +184,6 @@
 
 input[type="text"]:focus { outline: none; }
 input[type="file"]:focus { outline: none; }
+input[type="submit"]:focus { outline: none; }
 textarea:focus { outline: none; }
 
