@@ -2,7 +2,7 @@ $(function () {
 	$('.wrapper_1').hover(function() {
 		$(this).children().stop().animate({
 			paddingTop:"0%",
-			opacity:0.3
+			opacity:0.1
 		}, 400);
 	},function() {
 		$(this).children().stop().animate({
@@ -11,6 +11,21 @@ $(function () {
 		}, 400);
 	});
 });
+
+// $(function () {
+// 	$('.popup_container').hover(function() {
+// 		$(this).children().stop().animate({	
+// 			opacity:1
+// 		}, 400);
+// 	},function() {
+// 		$(this).children().stop().animate({			
+// 			opacity:0
+// 		}, 400);
+// 	});
+// });
+
+
+
 
  $(document).ready(function(){
         //Скрыть PopUp при загрузке страницы    

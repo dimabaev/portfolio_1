@@ -6,7 +6,7 @@
 .admin_panel {
 	width: 590px;
 	background: #eff3f7;
-    transform: translateY(50%);
+    transform: translateY(40%);
     margin: auto;
     height: 500px;
 }
@@ -91,7 +91,10 @@
 	margin-bottom: 35px;
 }
 
-.input_password::-webkit-input-placeholder {
+.input_password::-webkit-input-placeholder,
+				   -moz-input-placeholder,
+	               -o-input-placeholder,
+	               -ms-input-placeholder {
 	color: #48cbe8;
 	font-size: 17px;
 }

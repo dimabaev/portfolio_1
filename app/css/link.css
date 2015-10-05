@@ -152,15 +152,24 @@
     padding-left: 8px;
 }
 /*-------ДОРЛНИТЕЛЬНЫЕ НАСТРОЙКИ INPUT--------*/
-.captcha-input::-webkit-input-placeholder {
+.captcha-input::-webkit-input-placeholder,
+               -moz-input-placeholder,
+               -o-input-placeholder,
+               -ms-input-placeholder {
   color: #48cbe8;
 }
 
-.input::-webkit-input-placeholder {
+.input::-webkit-input-placeholder ,
+             -moz-input-placeholder,
+               -o-input-placeholder,
+               -ms-input-placeholder{
   color: #48cbe8;
 }
 
-.textarea::-webkit-input-placeholder {
+.textarea::-webkit-input-placeholder ,
+               -moz-input-placeholder,
+               -o-input-placeholder,
+               -ms-input-placeholder{
   color: #48cbe8;
 }
 

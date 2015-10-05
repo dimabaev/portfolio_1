@@ -17,6 +17,7 @@
     margin-top: -250px;
     position: absolute;
     background: #eff3f7;
+    opacity: 1;
     border-radius: 5px;
     overflow: hidden;
     box-sizing: border-box;
@@ -133,7 +134,7 @@
 	border-radius: 5px;
 	padding-left: 10px;
 	padding-top: 10px;
-	margin-bottom: 9px;
+	margin-bottom: 15px;
 	color: #48cbe8;
 }
 
@@ -142,8 +143,9 @@
 	width: 140px;
     height: 33px;
     background-position: -5px -48px;
-    margin: 10px auto;
-    margin-bottom: 30px;
+
+    margin-left: 90px;
+    margin-bottom: 22px;
     border: none;
 }
 
@@ -155,10 +157,16 @@
 
 
 
-.name_project::-webkit-input-placeholder {
+.name_project::-webkit-input-placeholder,
+               -moz-input-placeholder,
+               -o-input-placeholder,
+               -ms-input-placeholder  {
   color: #48cbe8;
 }
-.name_textarea::-webkit-input-placeholder {
+.name_textarea::-webkit-input-placeholder ,
+				 -moz-input-placeholder,
+                 -o-input-placeholder,
+                 -ms-input-placeholder {
   color: #48cbe8;
 }
 
