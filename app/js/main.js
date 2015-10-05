@@ -12,17 +12,19 @@ $(function () {
 	});
 });
 
-// $(function () {
-// 	$('.popup_container').hover(function() {
-// 		$(this).children().stop().animate({	
-// 			opacity:1
-// 		}, 400);
-// 	},function() {
-// 		$(this).children().stop().animate({			
-// 			opacity:0
-// 		}, 400);
-// 	});
-// });
+$(function () {
+	$('.popup').hover(function() {
+		$(this).children().stop().animate({	
+			top:"50%",
+			opacity:1
+		}, 400);
+	},function() {
+		$(this).children().stop().animate({	
+		    top:"-50%",		
+			opacity:0
+		}, 400);
+	});
+});
 
 
 
