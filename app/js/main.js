@@ -1,44 +1,47 @@
 $(function () {
 	$('.wrapper_1').hover(function() {
 		$(this).children().stop().animate({
-			paddingTop:"0%",
 			opacity:0.1
 		}, 400);
 	},function() {
 		$(this).children().stop().animate({
-			paddingTop:"100%",
 			opacity:1
 		}, 400);
 	});
 });
 
-$(function () {
-	$('.popup').hover(function() {
-		$(this).children().stop().animate({	
-			top:"50%",
-			opacity:1
-		}, 400);
-	},function() {
-		$(this).children().stop().animate({	
-		    top:"-50%",		
-			opacity:0
-		}, 400);
+$(document).ready(function() {
+	$('.portfolio_box').hover(function() {
+		$(".text-decor").stop(true, true).animate({fontSize: "17px", }, 400)
+	}, function() {
+		$(".text-decor").stop(true, true).animate({fontSize: "1px"}, 400)
 	});
 });
 
+// $(document).ready(function() {
+// 	$(".load-link").click(function() {
+// 		$(".popup_container").animate({top: "50%"}, 400)
+// 	});
+// });
+
+// $(document).ready(function() {
+// 	$(".load-link").click(function() {
+// 		$(".popup").animate({opacity: 1}, 400)
+// 	});
+// });
 
 
 
- $(document).ready(function(){
-        //Скрыть PopUp при загрузке страницы    
-        PopUpHide();
-    });
-    //Функция отображения PopUp
-    function PopUpShow(){
-        $("#popup1").show();
-    }
-    //Функция скрытия PopUp
-    function PopUpHide(){
-        $("#popup1").hide();
-    }
+ // $(document).ready(function(){
+ //        //Скрыть PopUp при загрузке страницы    
+ //        PopUpHide();
+ //    });
+ //    //Функция отображения PopUp
+ //    function PopUpShow(){
+ //        $("#popup1").show();
+ //    }
+ //    //Функция скрытия PopUp
+ //    function PopUpHide(){
+ //        $("#popup1").hide();
+ //    }
 

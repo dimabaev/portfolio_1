@@ -29,14 +29,17 @@
 			<div class="popup_header">
 				<h3 class="popup_text">
 					Добавление проекта
-					<a class="close_popup" href="javascript:PopUpHide()"></a>
+					<a class="close_popup b-close" href="#"></a>
 				</h3>
 			</div>
-			<form action="" class="popup_form" method="post" action="">
+			
+			<form role="form" action="" class="popup_form" id="popup_form" method="post" action="">
+			<div class="server-mes error-mes">Вы молодец!</div>
+			<div class="server-mes success-mes">Заполните имя!</div>
 
-				<label class="label_name_project">
+				<label for="projectName" class="label_name_project">
 					<p class="name_project_text">Название проекта</p>
-					<input type="text" class="name_project" placeholder="Введите название" name="" id=""></label>
+					<input type="text" class="name_project" placeholder="Введите название" name="projectName" id="projectName"></label>
 
 				<label class="label_name_project">
 					<p class="name_project_text">Картинка проекта</p>
@@ -46,11 +49,11 @@
 						<input type="file" class="name_load" placeholder="Введите название" name="" id=""></div>
 				</label>
 
-				<label class="label_name_project">
+				<label for="" class="label_name_project">
 					<p class="name_project_text">URL проекта</p>
-					<input type="text" class="name_project" placeholder="Добавьте ссылку" name="" id=""></label>
+					<input type="text" class="name_project" placeholder="Добавьте ссылку" name="" id="projectName"></label>
 
-				<label class="label_name_project">
+				<label for="" class="label_name_project">
 					<p class="name_project_text">Описание</p>
 					<textarea class="name_textarea" name="" id="" placeholder="Кратко в чем суть"></textarea>
 				</label>
@@ -199,7 +202,7 @@
 								<li class="portfolio_item">
 									<div class="portfolio_box_load">
 										<div class="wrapper_2">
-											<a class="load-link" href="javascript:PopUpShow()">
+											<a class="load-link" id="load_popup" href="#">
 												<img class="img-load" src="css/image/добавить-изобр.png" height="32" width="32">
 												<p class="load-p">Загрузить проект</p>
 											</a>
@@ -233,6 +236,8 @@
 
 	<!-- JS -->
 	<script src="bower/jquery/dist/jquery.min.js"></script>
+	<script src="bower/bPopup/jquery.bpopup.js"></script>
+	<script src="js/popup.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
