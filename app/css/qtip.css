@@ -1,0 +1,14 @@
+
+.qtip-mystyle {
+  background: #f97e76;
+  display: none;
+  color: #fff;
+  font-size: 13px;
+  font-family: 'firasansbok';
+  border: #f97e76 2px solid;
+}
+
+.error {
+  background: #fad2d1;
+  border: 1px solid #f97e76;
+}

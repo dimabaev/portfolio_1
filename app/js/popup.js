@@ -6,25 +6,26 @@ var modalWindow = (function () {
 		_setUpListners();
 	};
 
-	// Прослушивает события 
+	// Прослушивает события
 	var _setUpListners = function () {
-		$('#load_popup').on('click', _showModal); // открытие модоального окна 
-		$('#popup_form').on('submit', _addForm); // добавление проекта 
+		$('#load_popup').on('click', _showModal); // открытие модоального окна
+		$('#popup_form').on('submit', _addForm); // добавление проекта
 	};
 
 	//работает с модальным окном
-	var _showModal = function  (ev) {  
+	var _showModal = function  (ev) {
 		console.log('вызов модоального окна');
 		ev.preventDefault();
 		var divPopup = $('.popup'),
 			form = divPopup.find('#popup_form');
 		divPopup.bPopup({
-			speed: 650, 
+			speed: 650,
 			transition: 'slideDown',
 			onClose: function () {
 				form.find('.server-mes').text('').hide();
+				form.trigger("reset");
 			}
-		});		
+		});
 	};
 
  	//Добовляет проект
@@ -32,15 +33,16 @@ var modalWindow = (function () {
 		console.log('добавление проекта');
 		ev.preventDefault();
 
-		//Объявляем переменные 
+		//Объявляем переменные
 		var form = $(this),
 			url = 'add_project.php',
-			myServerGiveMeAnswer = _ajaxForm(form, url);
+			defObj = _ajaxForm(form, url);
 
-		myServerGiveMeAnswer.done(function(ans) {
+	if(defObj){
+		defObj.done (function(ans) {
 			console.log(ans);
 			var successBox = form.find('.success-mes'),
-				errorBox = form.find('.error-mes');
+					errorBox = form.find('.error-mes');
 
 			if (ans.status === 'OK') {
 				errorBox.hide();
@@ -49,23 +51,28 @@ var modalWindow = (function () {
 				successBox.hide();
 				errorBox.text(ans.text).show();
 			}
-		})
-		.fail(function() {
-			console.log("error");
-		})		
-	};
+		});
+	}
+};
+
+	// 	.fail(function() {
+	// 		console.log("error");
+	// 	});
+	// };
 
 	//Универсальная функция
 	//1.Собирает данные из формы
 	//2.проверяет форму
 	//3.Делает запрос на сервер и возвращает ответ с сервера
 	var _ajaxForm = function (form, url) {
-		
+
+		if (!validation.validateForm(form)) return false;
+
 		//1. собрать данные из формы
 		//2. проверить форму
 		//3. вернуть ответ с сервера
 		// if(!valid) return false;
-		// 
+		//
 		data = form.serialize();
 
 		var result = $.ajax({
@@ -73,11 +80,11 @@ var modalWindow = (function () {
 			type: 'POST',
 			dataType: 'json',
 			data: data,
-		})
+		});
 			return result;
 	};
 
-	// Возвращаем объект (публичные методы) 
+	// Возвращаем объект (публичные методы)
 	return {
 		init: init
 	};
@@ -86,16 +93,3 @@ var modalWindow = (function () {
 
 // Вызов модуля
 modalWindow.init();
-
-
-
-
-
-
-
-
-
-
-
-
-

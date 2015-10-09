@@ -11,11 +11,14 @@
 	<meta name="author" content="Dima Baev">
 	<!-- Bower -->
 	<link href="bower/normalize-css/normalize.css" rel="stylesheet">
+	<link href="bower/qtip2/jquery.qtip.css" rel="stylesheet">
+
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/font.css">
 	<link href="css/main.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main-work.css">
 	<link rel="stylesheet" type="text/css" href="css/popUp.css">
+	<link rel="stylesheet" href="css/qtip.css">
 	<!-- favicon -->
 	<link rel="icon"  href="css/image/favicon.ico">
 	<!-- js -->
@@ -32,14 +35,14 @@
 					<a class="close_popup b-close" href="#"></a>
 				</h3>
 			</div>
-			
+
 			<form role="form" action="" class="popup_form" id="popup_form" method="post" action="">
 			<div class="server-mes error-mes">Вы молодец!</div>
 			<div class="server-mes success-mes">Заполните имя!</div>
 
 				<label for="projectName" class="label_name_project">
 					<p class="name_project_text">Название проекта</p>
-					<input type="text" class="name_project" placeholder="Введите название" name="projectName" id="projectName"></label>
+					<input type="text" class="name_project" qtip-content="Введите имя проекта" placeholder="Введите название" name="projectName" id="projectName"></label>
 
 				<label class="label_name_project">
 					<p class="name_project_text">Картинка проекта</p>
@@ -51,11 +54,11 @@
 
 				<label for="" class="label_name_project">
 					<p class="name_project_text">URL проекта</p>
-					<input type="text" class="name_project" placeholder="Добавьте ссылку" name="" id="projectName"></label>
+					<input type="text" class="name_project" qtip-content="Напишите URL проекта" placeholder="Добавьте ссылку" name="" id="projectName"></label>
 
 				<label for="" class="label_name_project">
 					<p class="name_project_text">Описание</p>
-					<textarea class="name_textarea" name="" id="" placeholder="Кратко в чем суть"></textarea>
+					<textarea class="name_textarea" name="" id="" qtip-content="Напишите красткое описание" placeholder="Кратко в чем суть"></textarea>
 				</label>
 					<input type="submit" class="bottom_project" value="">
 			</form>
@@ -235,9 +238,11 @@
 	</footer>
 
 	<!-- JS -->
-	<script src="bower/jquery/dist/jquery.min.js"></script>
+	<script src="bower/jquery/jquery.min.js"></script>
 	<script src="bower/bPopup/jquery.bpopup.js"></script>
 	<script src="js/popup.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="js/validaten.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

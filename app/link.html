@@ -11,11 +11,13 @@
 	<meta name="author" content="Dima Baev">
 	<!-- Bower -->
 	<link href="bower/normalize-css/normalize.css" rel="stylesheet">
+	<link href="bower/qtip2/jquery.qtip.css" rel="stylesheet">
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/font.css">
 	<link href="css/main.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main-work.css">
 	<link rel="stylesheet" type="text/css" href="css/link.css">
+	<link rel="stylesheet" href="/css/qtip.css" media="screen" title="no title" charset="utf-8">
 	<!-- favicon -->
 	<link rel="icon"  href="css/image/favicon.ico">
 	<!-- js -->
@@ -97,27 +99,29 @@
 							<h2 class="table_of_contents_link">У вас интересный проект? Напишите мне</h2>
 						</div>
 						<div class="form clearfix">
-							<form name="form" method="post" action="">
+							<form id="contact-me" name="form" method="post" action="">
 								<label for="" class=" label you_name clearfix">
 									<p class="name">Имя</p>
-									<input class="input" type="text" name="name" id="name" placeholder="Как к Вам обращаться"></label>
+									<input class="input" type="text" name="name" id="name" placeholder="Как к Вам обращаться" qtip-content="Вы не ввели имя"></label>
 
 								<label for="" class="label you_mail clearfix">
 									<p class="name">Email</p>
-									<input class="input" type="text" name="name" id="name" placeholder="Куда мне писать"></label>
+									<input class="input" type="text" name="name" id="name" placeholder="Куда мне писать" qtip-content="Вы не ввели email" qtip-position="right"></label>
 
 								<label for="" class="label your_message clearfix">
 									<p class="message">Кратко о себе</p>
-									<textarea class="textarea" name="message" id="message" placeholder="Кратко в чем суть"></textarea>
-								</label>
+									<textarea  class="textarea" name="" id="message" placeholder="Кратко в чем суть" qtip-content="Что вы от меня хотите?"></textarea>
+								</label
 
 								<label for="" class="label capha clearfix">
 									<p class="caption">Введите код, указанный на картинке</p>
+	                <!-- <input type="text" name="name" value="" qtip-content="Вы не ввели текст указанный на картинке"> -->
+
 								</label>
 								<img class="captcha-img" src="css/image/capha.png" alt="каптча">
 
 								<label class="captha_code clearfix">
-									<input class="captcha-input" value="" type="text" name="name" id="name" placeholder="Введите код">
+									<input class="captcha-input" value="" type="text" name="name" id="name" placeholder="Введите код" qtip-content="Вы не ввели код" qtip-position="right">
 								</label>
 
 								<div class="clearfix">
@@ -144,7 +148,12 @@
 	</footer>
 
 	<!-- JS -->
-	<script src="bower/jquery/dist/jquery.min.js"></script>
+	<script src="bower/jquery/jquery.min.js"></script>
+	<script src="bower/bPopup/jquery.bpopup.js"></script>
+	<script src="js/popup.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/validaten.js"></script>
+	<script src="js/contact_me.js"></script>
 </body>
 </html>
