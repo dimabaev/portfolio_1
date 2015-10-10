@@ -85,7 +85,7 @@
 }
 
 .label_name_project {
-	
+
 }
 
 .name_project {
@@ -96,16 +96,19 @@
 	padding-left: 10px;
 	margin-bottom: 9px;
 	color: #48cbe8;
+  font-family: 'fira_sanslight';
 }
 
 /*Редактирование загрузки файлов*/
 .fila_decor {
 	position: relative;
-	width: 320px;
+  z-index: 1;
+	/*width: 330px;*/
 	height: 38px;
 	border: 1px solid #48cbe8;
 	border-radius: 5px;
 	margin-bottom: 9px;
+  /*padding-left: 10px;*/
 	color: #48cbe8;
 	cursor: pointer;
 	background: #fff;
@@ -114,28 +117,36 @@
 .fila_decor .name_load {
 	position: absolute;
 	top: 0;
+  left: 0;
 	opacity: 0;
 }
 
 .name_load {
-	width: 320px;
+	/*width: 310px;*/
+  position: absolute;
 	height: 38px;
-	border: 1px solid #48cbe8;
-	border-radius: 5px;
-	padding-left: 10px;
-	margin-bottom: 9px;
-	color: #48cbe8;
+
 }
 
 .decor_p {
 	float: left;
 	margin: 0;
-	color: #48cbe8;
-	font-size: 17px;
-	margin-bottom: 6px;
-	padding-left: 10px;
-	padding-top: 10px;
-	cursor: pointer;
+  font-family: 'fira_sanslight';
+  height: 38px;
+  margin-bottom: 9px;
+  /*padding-left: 10px;*/
+  color: #48cbe8;
+  cursor: pointer;
+  background: #fff;
+  overflow: hidden;
+
+  font-family: 'fira_sanslight';
+  height: 35px;
+  width: 246px;
+  margin-bottom: 9px;
+  padding-left: 10px;
+  color: #48cbe8;
+  border: none;
 }
 
 .load_scrin {
@@ -161,6 +172,7 @@
 	border: 1px solid #48cbe8;
 	width: 310px;
 	height: 100px;
+  font-family: 'fira_sanslight';
 	border-radius: 5px;
 	padding-left: 10px;
 	padding-top: 10px;
@@ -194,9 +206,16 @@
   color: #48cbe8;
 }
 .name_textarea::-webkit-input-placeholder ,
-				 -moz-input-placeholder,
+				        -moz-input-placeholder,
                  -o-input-placeholder,
                  -ms-input-placeholder {
+  color: #48cbe8;
+}
+
+.decor_p::-webkit-input-placeholder,
+               -moz-input-placeholder,
+               -o-input-placeholder,
+               -ms-input-placeholder  {
   color: #48cbe8;
 }
 
@@ -213,7 +232,7 @@
 
 .fila_decor input[fype=file] {
 	position: absolute;
-	 top: 0; 
+	 top: 0;
 	 right: 0;
 	 opacity: 0;
      filter: alpha(opacity=0);
@@ -221,7 +240,6 @@
 
 
 input[type="text"]:focus { outline: none; }
-input[type="file"]:focus { outline: none; }
+input[type="file"]:focus { outline: none;}
 input[type="submit"]:focus { outline: none; }
 textarea:focus { outline: none; }
-

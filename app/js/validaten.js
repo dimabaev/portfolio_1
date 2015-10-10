@@ -24,7 +24,7 @@ var validation = (function () {
 
 	// Создает тултипы
 	var _createQtip = function (element, position) {
- console.log('я работаю');
+ // console.log('я работаю');
 			//позиция тултипа
 			if(position === 'right'){
 				position = {
@@ -67,7 +67,7 @@ var validation = (function () {
 	var validateForm = function (form) {
 
 
-		var elements = form.find('input', 'textarea').not('input[type="file"],input[type="submit"],input[type="reset"],input[type="hidden"]'),
+		var elements = form.find('input, textarea').not('input[type="file"],input[type="submit"],input[type="reset"],input[type="hidden"]'),
 			valid = true;
 
 			// Пройдемся по всем элементам формы

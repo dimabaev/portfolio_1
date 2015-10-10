@@ -1,3 +1,7 @@
+input, textarea, button {
+	outline: none;
+}
+
 .link_backgraund {
      background-color:#48CBE8;
      border-bottom: 17px solid #51DAF8;
@@ -44,7 +48,7 @@
     margin-bottom: 20px;
     border-radius: 3px 3px;
     border: 1px solid #48cbe8;
-    color: #A9AEB9;
+    color: #48cbe8;
 }
 
 .form .label {
@@ -52,7 +56,7 @@
 }
 
 .you_mail {
-  margin-left: 9px 
+  margin-left: 9px
 }
 
 .your_message {
@@ -68,7 +72,7 @@
     font-size: 14px;
     padding: 10px;
     resize: none;
-    color: #A9AEB9;
+    color: #48cbe8;
     margin-bottom: 19px;
 }
 
@@ -102,7 +106,7 @@
 .submit_one:active {
   background-position: -16px -4px;
     height: 33px;
-    width: 139px 
+    width: 139px
 }
 
 .submit_2 {

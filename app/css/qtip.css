@@ -5,10 +5,24 @@
   color: #fff;
   font-size: 13px;
   font-family: 'firasansbok';
-  border: #f97e76 2px solid;
+  /*border: #f97e76 2px solid;*/
+  border-width: 1px;
+  border-style: solid;
+  border-color:  #f97e76;
+}
+
+.qtip-content {
+   position: relative;
+    padding: 5px 8px;
+    overflow: hidden;
+    text-align: left;
+    word-wrap: break-word;
 }
 
 .error {
-  background: #fad2d1;
-  border: 1px solid #f97e76;
+  background: #fad2d1 !important;
+  /*border: 1px solid #f97e76 !important;*/
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color:  #f97e76 !important;
 }

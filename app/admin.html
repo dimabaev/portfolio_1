@@ -11,10 +11,12 @@
 	<meta name="author" content="Dima Baev">
 	<!-- Bower -->
 	<link href="bower/normalize-css/normalize.css" rel="stylesheet">
+	<link href="bower/qtip2/jquery.qtip.css" rel="stylesheet">
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/font.css">
 	<link href="css/main.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/admin.css">
+	<link rel="stylesheet" href="css/qtip.css">
 	<!-- favicon -->
 	<link rel="icon"  href="css/image/favicon.ico">
 	<!-- js -->
@@ -26,19 +28,19 @@
 		<div class="main_content">
 			<div class="container">
 				<div class="wrapper_2">
-					<form class="admin_panel" action="#" method="post">
+					<form class="admin_panel" id="admin_form" action="" method="post">
 						<div class="header_admin">
 							<h3 class="admin_auto">Авторизируйтесь</h3>
 						</div>
 						<div class="body_admin clearfix">
 							<label for="" class="label_login">
 								<p class="name_login">Логин</p>
-								<input id="name" type="text" class="input_login" placeholder="Введите логин"></label>
+								<input id="name" type="text" class="input_login" placeholder="Введите логин" qtip-content="Вы забыли ввести логин"></label>
 							<label for="" class="label_password">
 								<p class="password_login">Пароль</p>
-								<input type="text" class="input_password" placeholder="Введите пороль"></label>
+								<input type="text" class="input_password" placeholder="Введите пороль" qtip-content="Вы забыли ввести пороль"></label>
 							<div class="wrapper_button">
-							<input class="button_admin" type="submit" name="submit" id="submit" value="">
+							<input class="button_admin" type="submit" name="" id="" value="">
 							</div>
 						</div>
 					</form>
@@ -46,7 +48,10 @@
 			</div>
 		</div>
 	</div>
-	<script src="bower/jquery/dist/jquery.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="bower/jquery/jquery.min.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="js/admin.js"></script>
+	<script src="js/validaten.js"></script>
+	<script src="js/jquery.placeholder.min.js"></script>
 </body>
 </html>

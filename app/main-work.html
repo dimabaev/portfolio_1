@@ -19,6 +19,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main-work.css">
 	<link rel="stylesheet" type="text/css" href="css/popUp.css">
 	<link rel="stylesheet" href="css/qtip.css">
+	<link rel="stylesheet" href="css/inputFile.css">
 	<!-- favicon -->
 	<link rel="icon"  href="css/image/favicon.ico">
 	<!-- js -->
@@ -44,13 +45,14 @@
 					<p class="name_project_text">Название проекта</p>
 					<input type="text" class="name_project" qtip-content="Введите имя проекта" placeholder="Введите название" name="projectName" id="projectName"></label>
 
-				<label class="label_name_project">
-					<p class="name_project_text">Картинка проекта</p>
-					<div class="fila_decor">
-						<p class="decor_p">Загрузить картинку</p>
-						<div class="load_scrin"></div>
-						<input type="file" class="name_load" placeholder="Введите название" name="" id=""></div>
-				</label>
+				<div class="fileupload-wrapper" id="uploadfile">
+					<span class="name_project_text">Картинка проекта</span>
+					<label class="fileupload-lable">
+						<input id="fileupload" class="fileupload" type="file" name="files[]">
+						<input id="fileurl" type="hidden" name="fileurl">
+					</label>
+					<input id="filename" type="text" class="input" name="filename" placeholder="Загрузите изображение" disabled qtip-content="Вы не выбрали изображение" qtip-position="left">
+				</div>
 
 				<label for="" class="label_name_project">
 					<p class="name_project_text">URL проекта</p>
@@ -203,15 +205,14 @@
 								</li>
 
 								<li class="portfolio_item">
-									<div class="portfolio_box_load">
-										<div class="wrapper_2">
-											<a class="load-link" id="load_popup" href="#">
-												<img class="img-load" src="css/image/добавить-изобр.png" height="32" width="32">
-												<p class="load-p">Загрузить проект</p>
-											</a>
-										</div>
-
-									</div>
+										<a class="load-link" id="load_popup" href="#">
+											<div class="portfolio_box_load">
+												<div class="wrapper_2">
+														<img class="img-load" src="css/image/добавить-изобр.png" height="32" width="32">
+														<p class="load-p">Загрузить проект</p>
+												</div>
+											</div>
+										</a>
 									<span class="adress">
 										<a href="#" class="adress-link"></a>
 									</span>
@@ -244,5 +245,6 @@
 	<script src="bower/qtip2/jquery.qtip.js"></script>
 	<script src="js/validaten.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/jquery.placeholder.min.js"></script>
 </body>
 </html>
