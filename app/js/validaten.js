@@ -10,7 +10,13 @@ var validation = (function () {
 	var _setUpListners = function () {
 		$('form').on('keydown', '.error', _removeError);
 		$('form').on('reset', _clearForm);
+		// $('.close_popup ').on('reset', _hideQtip); // Скрывание тултипа при нажатии на крестик
 	};
+
+			// var _hideQtip = function () {
+			// 	var form = $(this);
+			// 	form.find('input, textarea, .input').trigger('hideTooltip');
+			// };
 
 			var _removeError = function () {
 				$(this).removeClass('error');
@@ -18,7 +24,7 @@ var validation = (function () {
 
 			var _clearForm = function (form) {
 				var form = $(this);
-				form.find('input, textarea').trigger('hideTooltip');
+				form.find('input, textarea, .input').trigger('hideTooltip');
 				form.find('.error').removeClass('error');
 			};
 
@@ -67,7 +73,7 @@ var validation = (function () {
 	var validateForm = function (form) {
 
 
-		var elements = form.find('input, textarea').not('input[type="file"],input[type="submit"],input[type="reset"],input[type="hidden"]'),
+		var elements = form.find('input, textarea, .input').not('input[type="file"],input[type="submit"],input[type="reset"],input[type="hidden"]'),
 			valid = true;
 
 			// Пройдемся по всем элементам формы
@@ -85,6 +91,8 @@ var validation = (function () {
 
 			return valid;
 	};
+
+
 
 
 	// Возвращаем объект (публичные методы)

@@ -219,6 +219,13 @@
   color: #48cbe8;
 }
 
+/*.input::-webkit-input-placeholder,
+               -moz-input-placeholder,
+               -o-input-placeholder,
+               -ms-input-placeholder  {
+  color: #48cbe8;
+}*/
+
 .fila_decor {
 	position: relative;
 	width: 310px;

@@ -1,5 +1,5 @@
 <?php
-$name = $_POST['projectName'];
+$name = $_POST['filename'];
 $data = array();
 
 if ($name === '') {

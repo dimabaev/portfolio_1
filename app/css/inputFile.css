@@ -67,9 +67,36 @@
 /* _____________ // тултипы ______ */
 
 /*=============меняем placeholder================*/
-.input::-webkit-input-placeholder,
+/*.input::-webkit-input-placeholder,
                -moz-input-placeholder,
                -o-input-placeholder,
                -ms-input-placeholder  {
   color: #48cbe8;
+}*/
+
+.input::-webkit-input-placeholder {
+	color: #48cbe8;
 }
+
+.input::-moz-input-placeholder {
+	color: #48cbe8;
+}
+
+.input::-o-input-placeholder {
+	color: #48cbe8;
+}
+
+.input:-ms-input-placeholder {
+		color: #48cbe8;
+}
+
+.placeholder {
+	color: #48cbe8;
+}
+
+/*input[type="file"]::-webkit-input-placeholder,
+               -moz-input-placeholder,
+               -o-input-placeholder,
+               -ms-input-placeholder  {
+  color: #48cbe8;
+}*/
